@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Ubuntu:wght@300&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+   margin: 0;
+   padding: 0; 
+}
+nav{
+    font-family:'ubuntu','sans-serif';
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+.brand img{
+    height: 45px;
+    margin: 5px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+nav ul li{
+    padding: 0px 10px;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 125px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.container{
+    height: 72vh;
+    background-image: url('https://wallpapers.com/images/hd/girl-with-black-headphone-a09f6yk2y3h937yo.jpg');
+    background-size: 100%;
+    color: white;
+    font-family: 'ubuntu','sans-serif';
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    background-attachment: fixed;
+    position: sticky;
+
+}
+#myprogressbar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons{
+    color: white;
+    margin: 10px;
+}
+.fa{
+    padding: 0px 20px;
+}
+.songlistplay{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+}
+.timestamp{
+    margin: 0px 10px;
+}
+.songitem{
+    background-color: white;
+    width: 80%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 34px;
+    justify-content: space-between;
+    color: black;
+    align-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px auto;
+    background-repeat: no-repeat;
+}
+.songitem span{
+    overflow: scroll;
+}
+.songitem img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+
+}
+.songitem{
+    cursor: pointer;
+}
+.songlist h1{
+    margin: 0px;
+}
+.songlist{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+.songinfo{
+    font-size: large;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.songinfo img{
+    opacity: 0;
+    transition:  opacity 0.5s ease-in;
+}
+#mext,#back{
+    cursor: pointer;
+}
